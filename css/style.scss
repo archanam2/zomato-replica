@@ -52,7 +52,7 @@ $response : 756px;
              font-size: 12px;
            }
            
-           #nav_item_1,#nav_item_2,#nav_item_3{
+           #nav_item_1{
               flex: 1;
               margin-right: 20px;
               img{
@@ -65,6 +65,36 @@ $response : 756px;
               @include response{
                   float: right;
                   padding: 2px 15px;
+              }
+              #nav_item_2{
+                flex: 1;
+                margin-right: 20px;
+                img{
+                    height: 30px;
+                    width: 30px;
+                    @include response{
+                        width: 20px;
+                    }
+                }
+                @include response{
+                    float: right;
+                    padding: 2px 15px;
+                }
+                #nav_item_3{
+                    flex: 1;
+              margin-right: 20px;
+              img{
+                  height: 30px;
+                  width: 30px;
+                  @include response{
+                      width: 20px;
+                  }
+              }
+              @include response{
+                  float: right;
+                  padding: 2px 15px;
+              }
+                }
               }
            }
            
@@ -135,7 +165,7 @@ $response : 756px;
                 width: 200px;
             }
         }
-        .search-rest{
+        #search-rest{
             height: 15px;
             width: 100px;
         }

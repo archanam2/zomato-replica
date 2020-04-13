@@ -64,26 +64,76 @@
   font-size: 12px;
 }
 
-.h-container .head-item-2 ul #nav_item_1, .h-container .head-item-2 ul #nav_item_2, .h-container .head-item-2 ul #nav_item_3 {
+.h-container .head-item-2 ul #nav_item_1 {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   margin-right: 20px;
 }
 
-.h-container .head-item-2 ul #nav_item_1 img, .h-container .head-item-2 ul #nav_item_2 img, .h-container .head-item-2 ul #nav_item_3 img {
+.h-container .head-item-2 ul #nav_item_1 img {
   height: 30px;
   width: 30px;
 }
 
 @media (max-width: 756px) {
-  .h-container .head-item-2 ul #nav_item_1 img, .h-container .head-item-2 ul #nav_item_2 img, .h-container .head-item-2 ul #nav_item_3 img {
+  .h-container .head-item-2 ul #nav_item_1 img {
     width: 20px;
   }
 }
 
 @media (max-width: 756px) {
-  .h-container .head-item-2 ul #nav_item_1, .h-container .head-item-2 ul #nav_item_2, .h-container .head-item-2 ul #nav_item_3 {
+  .h-container .head-item-2 ul #nav_item_1 {
+    float: right;
+    padding: 2px 15px;
+  }
+}
+
+.h-container .head-item-2 ul #nav_item_1 #nav_item_2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 20px;
+}
+
+.h-container .head-item-2 ul #nav_item_1 #nav_item_2 img {
+  height: 30px;
+  width: 30px;
+}
+
+@media (max-width: 756px) {
+  .h-container .head-item-2 ul #nav_item_1 #nav_item_2 img {
+    width: 20px;
+  }
+}
+
+@media (max-width: 756px) {
+  .h-container .head-item-2 ul #nav_item_1 #nav_item_2 {
+    float: right;
+    padding: 2px 15px;
+  }
+}
+
+.h-container .head-item-2 ul #nav_item_1 #nav_item_2 #nav_item_3 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 20px;
+}
+
+.h-container .head-item-2 ul #nav_item_1 #nav_item_2 #nav_item_3 img {
+  height: 30px;
+  width: 30px;
+}
+
+@media (max-width: 756px) {
+  .h-container .head-item-2 ul #nav_item_1 #nav_item_2 #nav_item_3 img {
+    width: 20px;
+  }
+}
+
+@media (max-width: 756px) {
+  .h-container .head-item-2 ul #nav_item_1 #nav_item_2 #nav_item_3 {
     float: right;
     padding: 2px 15px;
   }
@@ -171,7 +221,7 @@
   }
 }
 
-.banner .search-restaurant .search-rest {
+.banner .search-restaurant #search-rest {
   height: 15px;
   width: 100px;
 }
@@ -517,6 +567,10 @@ footer .footer-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 footer .footer-wrapper .AboutZomato, footer .footer-wrapper .forfoodies, footer .footer-wrapper .forrest, footer .footer-wrapper .Countries {
