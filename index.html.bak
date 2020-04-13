@@ -179,7 +179,7 @@
             </div>
              </div>
              <section class="categories">
-                 <h2 id="cat-title">Quick Searches</h2>
+                 <h2 id="cat-id">Quick Searches</h2>
                  <p id="cat-subtitle">
                     Discover restaurants by type of meal
                  </p>
