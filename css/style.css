@@ -1,0 +1,592 @@
+@use './reset.scss';
+/* Add your css here */
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.h-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+}
+
+.h-container .head-item-1 {
+  height: 50%;
+  width: 20%;
+}
+
+.h-container .head-item-1 a {
+  color: black;
+}
+
+@media (max-width: 756px) {
+  .h-container .head-item-1 {
+    position: relative;
+    top: 15px;
+    margin-left: 0px;
+  }
+}
+
+.h-container .head-item-2 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  justify-content: flex-end;
+}
+
+@media (max-width: 756px) {
+  .h-container .head-item-2 ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin-right: 0px;
+    padding: 10px 10px;
+  }
+}
+
+.h-container .head-item-2 ul a {
+  color: black;
+  font-size: 12px;
+}
+
+.h-container .head-item-2 ul #nav_item_1, .h-container .head-item-2 ul #nav_item_2, .h-container .head-item-2 ul #nav_item_3 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 20px;
+}
+
+.h-container .head-item-2 ul #nav_item_1 img, .h-container .head-item-2 ul #nav_item_2 img, .h-container .head-item-2 ul #nav_item_3 img {
+  height: 30px;
+  width: 30px;
+}
+
+@media (max-width: 756px) {
+  .h-container .head-item-2 ul #nav_item_1 img, .h-container .head-item-2 ul #nav_item_2 img, .h-container .head-item-2 ul #nav_item_3 img {
+    width: 20px;
+  }
+}
+
+@media (max-width: 756px) {
+  .h-container .head-item-2 ul #nav_item_1, .h-container .head-item-2 ul #nav_item_2, .h-container .head-item-2 ul #nav_item_3 {
+    float: right;
+    padding: 2px 15px;
+  }
+}
+
+.login-container #login-navigation {
+  margin-top: 5px;
+  margin-right: 5px;
+  float: right;
+}
+
+.login-container #login-navigation .login-item-1 {
+  margin-right: 40px;
+  color: whitesmoke;
+}
+
+.login-container #login-navigation .login-item-2 {
+  color: whitesmoke;
+  border: 2px solid white;
+}
+
+.banner {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bg.jpg");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner .logo {
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  left: 45%;
+  height: 100px;
+  width: 100px;
+  border-radius: 10%;
+}
+
+.banner .header {
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  left: 27%;
+  color: white;
+  font-size: x-large;
+}
+
+.banner .search-restaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  position: absolute;
+  top: 80%;
+  left: 10%;
+}
+
+@media (max-width: 756px) {
+  .banner .search-restaurant {
+    top: 80%;
+  }
+}
+
+.banner .search-restaurant select {
+  height: 30px;
+}
+
+@media (max-width: 756px) {
+  .banner .search-restaurant select {
+    width: 100px;
+    top: 80%;
+  }
+}
+
+.banner .search-restaurant input {
+  height: 30px;
+  width: 500px;
+}
+
+@media (max-width: 756px) {
+  .banner .search-restaurant input {
+    top: 80%;
+    width: 200px;
+  }
+}
+
+.banner .search-restaurant .search-rest {
+  height: 15px;
+  width: 100px;
+}
+
+.banner .search-restaurant button {
+  background-color: #8B0000;
+  color: white;
+  border-radius: 10%;
+  height: 30px;
+  width: 100px;
+  border: none;
+}
+
+@media (max-width: 756px) {
+  .banner .search-restaurant {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.container {
+  background-color: #D0D0D0;
+  padding: 0;
+  margin-left: 0;
+}
+
+.collection-box img {
+  height: 60%;
+  width: 95%;
+}
+
+.collection-box .collection-text #collection-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.collection-box .collection-text #collection-image .card-body {
+  height: 90%;
+}
+
+.widget {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+  border-color: black;
+  height: 300px;
+  width: 350px;
+  float: right;
+  font-size: bold;
+}
+
+.widget h4 {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.widget .search-del {
+  margin-left: 10px;
+  height: 40px;
+  width: 250px;
+}
+
+.widget .detect-btn {
+  background-color: #808080;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  width: 70px;
+}
+
+.widget .order-btn {
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 320px;
+  border-radius: 10px;
+  border: none;
+  background-color: #46a049;
+  color: white;
+  height: 40px;
+}
+
+.widget p {
+  text-align: center;
+  color: #46a049;
+  font-size: x-large;
+}
+
+.categories {
+  height: 300px;
+  width: auto;
+}
+
+@media (max-width: 756px) {
+  .categories {
+    height: 700px;
+  }
+}
+
+.categories #cat-id {
+  color: black;
+}
+
+.categories #cat-subtitle {
+  color: #787878;
+}
+
+.categories .category-list {
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.categories .category-list img {
+  height: 140px;
+  width: 130px;
+}
+
+@media (max-width: 756px) {
+  .categories .category-list img {
+    width: 60px;
+  }
+}
+
+.categories .category-list p {
+  text-align: center;
+}
+
+.categories .category-list li {
+  display: inline;
+}
+
+@media (max-width: 756px) {
+  .categories .category-list li {
+    width: 32%;
+    padding: 0px 15px;
+  }
+}
+
+.localities #loc-title {
+  font-weight: 0.8em;
+  color: black;
+}
+
+.localities #loc-subtitle {
+  color: #787878;
+}
+
+.localities .locality-list {
+  width: auto;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+}
+
+@media (max-width: 756px) {
+  .localities .locality-list {
+    height: 900px;
+  }
+}
+
+@media (max-width: 756px) {
+  .localities .locality-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.localities .locality-list .locality-list1, .localities .locality-list .locality-list2, .localities .locality-list .locality-list3 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.localities .locality-list .locality-list1 span, .localities .locality-list .locality-list2 span, .localities .locality-list .locality-list3 span {
+  color: #686868;
+}
+
+.logform {
+  height: 400px;
+  width: auto;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logform .phoneimg {
+  -webkit-box-flex: 35%;
+      -ms-flex: 35%;
+          flex: 35%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.logform .formcont {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.logform .formcont .grey {
+  color: #686868;
+}
+
+.logform .formcont .dp91 {
+  height: 30px;
+  width: 30px;
+}
+
+.logform .formcont #enterpe {
+  margin: 0;
+  height: 30px;
+}
+
+.logform .formcont #enterpe1 {
+  margin: 0;
+  height: 30px;
+  width: 245px;
+}
+
+.logform .formcont .button {
+  height: 30px;
+  width: 100px;
+  background-color: #46a049;
+  color: white;
+  border: none;
+}
+
+.logform .formcont .store {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logform .formcont .store .bt1, .logform .formcont .store .bt2 {
+  width: 15px;
+  height: 50px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.reviews {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reviews .numers {
+  color: #686868;
+  padding: 0;
+  margin: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+footer {
+  height: 650px;
+  width: auto;
+  background-color: #282b34;
+  color: white;
+}
+
+@media (max-width: 756px) {
+  footer {
+    height: 1200px;
+  }
+}
+
+footer .footerhead img {
+  padding: 10px;
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+footer .footerhead select {
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  height: 40px;
+  width: 150px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+}
+
+footer .footerhead select option {
+  background-color: black;
+}
+
+footer hr {
+  color: grey;
+  opacity: 0.6;
+  height: 1px;
+  margin: 15px 4px 15px 4px;
+}
+
+footer footer #Cities {
+  width: 170px;
+  height: 35px;
+  background-color: #282b34;
+  color: white;
+  font-size: 13px;
+  float: right;
+  margin: 25px 10px 20px 5px;
+}
+
+footer .footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer-wrapper .AboutZomato, footer .footer-wrapper .forfoodies, footer .footer-wrapper .forrest, footer .footer-wrapper .Countries {
+  list-style-type: none;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.6;
+  list-style: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+@media (max-width: 756px) {
+  footer .footer-wrapper .AboutZomato, footer .footer-wrapper .forfoodies, footer .footer-wrapper .forrest, footer .footer-wrapper .Countries {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+footer .footer-wrapper .AboutZomato .size, footer .footer-wrapper .forfoodies .size, footer .footer-wrapper .forrest .size, footer .footer-wrapper .Countries .size {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+footer .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .bottom .left {
+  -webkit-box-flex: 75%;
+      -ms-flex: 75%;
+          flex: 75%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+footer .bottom .left ul li {
+  padding: 10px;
+  color: white;
+  list-style: none;
+  display: inline;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .bottom .left ul li a {
+  color: white;
+}
+
+footer .bottom .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+footer .bottom .right ul li {
+  margin-left: 100px;
+  display: inline;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/*# sourceMappingURL=style.css.map */
